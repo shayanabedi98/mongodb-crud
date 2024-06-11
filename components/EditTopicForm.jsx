@@ -24,7 +24,7 @@ export default function EditTopicForm({ id, title, description }) {
       });
 
       if (res.ok) {
-        router.refresh()
+        router.refresh();
         router.push("/");
       } else {
         throw new Error("failed to create new topic");
